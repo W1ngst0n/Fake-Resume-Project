@@ -2,6 +2,25 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Geo&display=swap" rel="stylesheet">
     <style>
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0eedf; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 29, 23);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
         body {
             background-image: url(wallpaper.png);
             font-family: 'Geo', sans-serif;
@@ -23,21 +42,21 @@
             text-align: right;
 
         }
-        div{
-            position: relative;
-            display: flex;
-            margin-bottom: 150px;
-        }
+
 
         .skills{
   
-            
+            position: relative;
+            bottom:380px;
+            display: flex;
+            float: right;
+            right: 1000px;
         }
 
         .skills h1{
             position: absolute;
             padding: 5px 5px 5px 5px;
-            width: 350px;
+            width: 400px;
             height: 35px;
             color: #f0eedf;
             background-color:rgba(43, 42, 32, 0.8);
@@ -51,14 +70,22 @@
             margin-top: 50px;
         }
         .skills li{
-            margin-right: 200px;
+            margin-top: 20px;
+            margin-right: 5px;
+            width: 300px;
+            color: #f0eedf;
+            background-color:rgba(43, 42, 32, 0.8);
+            padding-left: 5px;
+            height:150px;
+            word-wrap: break-word;
+            
         }
 
-        .soft{
+        .port{
             
         }
         
-        .soft h1{
+        .port h1{
             position: absolute;
             padding: 5px 5px 5px 5px;
             width: 350px;
@@ -67,31 +94,33 @@
             background-color:rgba(43, 42, 32, 0.8);
         }
 
-        .lang{
-            
+        .port ul{
+            position: absolute;
+            display: flex;
+            align-items: stretch;
+            list-style-type:none;
+            float: left;
+            width: 1200px;
+            margin-top: 80px;
+            background-color:rgba(43, 42, 32, 0.8);
+            overflow-x: scroll;
+        }
+        .port li{
+            margin-top: 20px;
+            margin-right: 5px;
+
         }
         
-        .lang h1{
-            position: absolute;
-            padding: 5px 5px 5px 5px;
-            width: 350px;
-            height: 35px;
-            color: #f0eedf;
-            background-color:rgba(43, 42, 32, 0.8);
+        .port img{
+            width: 300px;
         }
 
-        .exp{
-            
+        .profile{
+            position: relative;
+            left: 10px;
+            width: 350px;
         }
 
-        .exp h1{
-            position: absolute;
-            padding: 5px 5px 5px 5px;
-            width: 350px;
-            height: 35px;
-            color: #f0eedf;
-            background-color:rgba(43, 42, 32, 0.8);
-        }
 
         
     </style>
@@ -104,29 +133,49 @@
         arnn_racoma@yahoo.com<br>
         0998 191 4794
     </p>
+
+    <img src="profile.jpg" class="profile">
+
+    <div class="window">
     <div class="skills">
         <h1 >Skills</h1>
         <ul>
-        <li><h3>Website Design</h3></li>
-        <li><h3>UI Design</h3></li>
-        <li><h3>Graphic Art</h3></li>
+        <li><h3>Website Design</h3>
+        
+            <p>
+                Javascript <br>
+                Bootstrap <br>
+
+            </p>
+        </li>
+        <li><h3>UI Design</h3>
+            <p>
+                Rainmeter <br>
+                Visual Basic <br>
+                Figma <br>
+            </p>
+        </li>
+        <li><h3>Graphic Art</h3>
+            <p>
+                Photoshop <br>
+                Blender <br>
+                Gimp <br>
+            </p>
+        </li>
         </ul>
     </div>
 
-    <div class="soft">
-        <h1 >Software</h1>
-        <p></p>
+
+    <div class="port">
+        <h1>Art Portfolio</h1>
+        <ul>
+            <li><img src="atlas.jpg"></li>
+            <li><img src="nezha.jpg"></li>
+            <li><img src="excal.jpg"> </li>
+            <li><img src="nidus.jpg"></li>
+            <li><img src="hydroid.jpg"></li>
+        </ul>
     </div>
-
-
-    <div class="lang">
-        <h1>Languages</h1>
-        <p></p>
-    </div>
-
-    <div class="exp">
-        <h1>Experiences</h1>
-        <p></p>
     </div>
 </body>
 </html>
